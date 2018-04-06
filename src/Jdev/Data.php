@@ -15,9 +15,7 @@ class Data extends Base
 	CONTROL_LOXAPP2 = 'LoxAPP2.xml';
 	
 	protected $controls = [
-		self::CONTROL_STATUS,
-		self::CONTROL_WEATHERU,
-		self::CONTROL_LOXAPP2
+		self::CONTROL_STATUS
 	];
 
 	public function __construct(Loxone\Client $Client)
@@ -36,10 +34,3 @@ class Data extends Base
 		return $this->control(self::CONTROL_LOXAPP2);
 	}
 }
-
-/*
- * http://miniserver/data/status	Zobrazuje stav Miniserveru a všech Extensionů
- * http://miniserver/data/weatheru.xml	Zobrazuje údaje o počasí
- * http://miniserver/data/LoxAPP2.xml	Struktura souboru pro vizualizaci
- * http://miniserver/stats	Stav statistiky
- */

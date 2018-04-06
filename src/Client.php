@@ -11,13 +11,15 @@ use GuzzleHttp;
  */
 class Client
 {
+	// values
 	const V_EIN = 'Ein',
 	V_ON = 'On',
 	V_AUS = 'Aus',
-	V = 'Off',
+	V_OFF = 'Off',
 	V_IMPULS = 'Impuls',
 	V_PULSE = 'Pulse';
 	
+	// digital impuls values
 	const DI_IMPULS_PLUS = 'ImpulsPlus',
 	DI_IMPULS_MINUS = 'ImpulsMinus',
 	DI_PULSE_DOWN = 'PulseDown',
@@ -82,7 +84,7 @@ class Client
 		return $this->address;
 	}
 	
-	public function connect()
+	public function connect(): void
 	{
 		try {
 			if( empty($this->HttpClient) ) {

@@ -26,7 +26,7 @@ class Bus extends Base
 		self::CONTROL_OVER_RUNS,
 		self::CONTROL_PARITY_ERRORS
 	];
-			
+	
 	public function __construct(Loxone\Client $Client)
 	{
 		$Client->setCommand('jdev/bus');

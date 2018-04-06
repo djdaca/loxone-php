@@ -51,7 +51,7 @@ abstract class Base
 	
 	public function __call($name, $arguments)
 	{
-		return $this->control($name, ...$arguments);
+		return $this->control($name, implode('/', $arguments));
 	}
 	
 	public function raw($enable = true)

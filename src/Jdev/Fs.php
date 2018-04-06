@@ -45,11 +45,3 @@ class Fs extends Base
 		return $this->Client->getAddress() .'/'. $this->Client->getCommand();
 	}
 }
-
-/*
- * http://miniserver/dev/fslist/	Zobrazí list kořenového adresáře na SD kartě
-http://miniserver/dev/fslist/path/	Zobrazí se list adresářové cesty na SD kartě
-http://miniserver/dev/fsget/filepath/	Načíst soubr (cesta k souboru k nahrazení)
-http://miniserver/dev/fsdel/filepath/	Odstraní soubor (podle cesty souboru)
-http://miniserver/dev/fsget/log/def.log	Slouží k získání informací v souboru def.log
- */

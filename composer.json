@@ -1,0 +1,25 @@
+{
+    "name": "djdaca/loxone-php",
+    "type": "library",
+    "description": "Loxone Api class",
+    "keywords": ["loxone", "api", "rest", "client"],
+    "homepage": "https://github.com/djdaca",
+    "license": "MIT",
+	"minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Daniel Čekan",
+            "email": "djdaca@seznam.cz",
+            "homepage": "https://github.com/djdaca"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "6.3.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Loxone\\": "src/"
+        }
+    }
+}

@@ -29,7 +29,7 @@ abstract class Base
 		if( $name && in_array($name, $this->controls) == false ) {
 			throw new \Exception("control ".$name." not exist");
 		}
-		$res = $this->Client->getHttpClient()->request("GET", $this->Client->getUrl($name));
+		$res = $this->Client->getHttpClient()->request("GET", $this->Client->getUrl($name, $value));
 		$body = $res->getBody();
 		if( $this->raw ) {
 			return $body;

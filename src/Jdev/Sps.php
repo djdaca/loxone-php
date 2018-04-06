@@ -20,7 +20,8 @@ class Sps extends Base
 	CONTROL_ENUMDEV = 'enumdev',
 	CONTROL_ENUMIN = 'enumin',
 	CONTROL_ENUMOUT = 'enumout',
-	CONTROL_IDENTIFY = 'identify';
+	CONTROL_IDENTIFY = 'identify',
+	CONTROL_IO = 'io';
 	
 	protected $controls = [
 		self::CONTROL_STATE,
@@ -32,7 +33,8 @@ class Sps extends Base
 		self::CONTROL_ENUMDEV,
 		self::CONTROL_ENUMIN,
 		self::CONTROL_ENUMOUT,
-		self::CONTROL_IDENTIFY
+		self::CONTROL_IDENTIFY,
+		self::CONTROL_IO
 	];
 	
 	/*****

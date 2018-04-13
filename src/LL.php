@@ -43,9 +43,14 @@ class LL implements ArrayAccess
 			$value = [];
 			foreach($values as $line) {
 				$valuePart = explode(':', $line, 2);
-				$value[$valuePart[0]] = $valuePart[1];
+				if( isset($valuePart[1]) ) {
+					$value[$valuePart[0]] = $valuePart[1];
+				}
 			}
-			return $value;
+			if( $value ) {
+				return $value;
+			}
+			return $values;
 		} 
 		return (string) $value;
 	}

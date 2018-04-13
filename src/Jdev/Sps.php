@@ -12,6 +12,7 @@ use Loxone;
 class Sps extends Base
 {
 	const CONTROL_STATE = 'state',
+	CONTROL_STATUS = 'status',
 	CONTROL_RESTART = 'restart',
 	CONTROL_STOP = 'stop',
 	CONTROL_RUN = 'run',
@@ -21,10 +22,12 @@ class Sps extends Base
 	CONTROL_ENUMIN = 'enumin',
 	CONTROL_ENUMOUT = 'enumout',
 	CONTROL_IDENTIFY = 'identify',
+	CONTROL_CHANGES = 'changes',
 	CONTROL_IO = 'io';
 	
 	protected $controls = [
 		self::CONTROL_STATE,
+		self::CONTROL_STATUS,
 		self::CONTROL_RESTART,
 		self::CONTROL_STOP,
 		self::CONTROL_RUN,
@@ -34,6 +37,7 @@ class Sps extends Base
 		self::CONTROL_ENUMIN,
 		self::CONTROL_ENUMOUT,
 		self::CONTROL_IDENTIFY,
+		self::CONTROL_CHANGES,
 		self::CONTROL_IO
 	];
 	

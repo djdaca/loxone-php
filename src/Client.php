@@ -84,7 +84,7 @@ class Client
 		return $this->address;
 	}
 	
-	public function connect(): void
+	public function connect()
 	{
 		try {
 			if( empty($this->HttpClient) ) {

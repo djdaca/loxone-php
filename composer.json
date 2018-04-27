@@ -15,8 +15,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "guzzlehttp/guzzle": "6.3.x-dev",
-        "ratchet/pawl": "dev-master"
+        "guzzlehttp/guzzle": "6.3.x-dev"
     },
     "autoload": {
         "psr-4": {
